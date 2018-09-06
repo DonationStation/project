@@ -31,7 +31,27 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+		int numLett = input.length();
+		char[] nameArray = input.toCharArray();
+		char[] randomName = new char[numLett];
+		int startRandom = numLett/2;
+		for (int i = 0; i < numLett; i++) {
+			char currLett = nameArray[i];
+			int index = (startRandom + i) % numLett;
+			boolean inserted = false;
+			while (!inserted) {
+				if (randomName[index] == '\000') {
+					randomName[index] = currLett;
+					inserted = true;
+				} else {
+					index++;
+				}
+			}
+			startRandom = (index * 2) / 3;
+
+		}
+		String nameOut = new String(randomName);
+	  return nameOut;
 	}
 	/**
 	 * Return a string rep of this object
