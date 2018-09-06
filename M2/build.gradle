@@ -1,0 +1,19 @@
+//applying plugin java
+apply plugin: "java"
+
+//sets the default task
+defaultTasks 'jar' 
+
+dependencies {
+    compile files('lib/resources.jar')
+}
+
+//Define the contents of the jar file
+jar  {
+  manifest {
+     attributes( "Main-Class": "edu.gatech.oad.antlab.pkg1.AntLabMain",
+                   "Class-Path": "../../lib/resources.jar" )
+    }
+}
+
+
