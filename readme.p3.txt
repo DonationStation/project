@@ -1,2 +1,2 @@
 Carl Lipford
-clipford3@gatech.edu 
+clipford3@gatech.edu
