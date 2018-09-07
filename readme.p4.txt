@@ -1,2 +1,2 @@
-Ricky Rosa
-rrosa8@gatech.edu
+Ricky Rosa 
+rrosa8@gatech.edu 
